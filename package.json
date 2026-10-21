@@ -1,0 +1,19 @@
+{
+  "name": "e-kaydi-whms",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter \"*\" dev",
+    "dev:web": "bun --filter @ekaydi/web dev",
+    "dev:api": "bun --filter @ekaydi/api dev",
+    "build": "bun --filter \"*\" build",
+    "lint": "bun --filter \"*\" lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

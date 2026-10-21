@@ -1,0 +1,16 @@
+{
+  "short_name": "E-KAYDI",
+  "name": "E-KAYDI WHMS — Enterprise 3D Warehouse System",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#101C2C",
+  "theme_color": "#101C2C",
+  "display": "standalone",
+  "orientation": "any"
+}

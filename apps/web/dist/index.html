@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101C2C" />
+    <title>E-KAYDI WHMS — Enterprise 3D Warehouse & Inventory Management</title>
+    
+    <!-- Google Fonts: Inter & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      // Anti-flash script for theme and language direction
+      try {
+        const theme = localStorage.getItem('ekaydi_theme') || 'system';
+        const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+        } else {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+        }
+
+        const lang = localStorage.getItem('ekaydi_lang') || 'en';
+        document.documentElement.setAttribute('lang', lang);
+        if (lang === 'ar') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-8hsN6ggN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-2sugriTj.css">
+  </head>
+  <body class="bg-industrial-surface dark:bg-industrial-navy-darker text-industrial-text dark:text-slate-100 min-h-screen antialiased selection:bg-industrial-teal selection:text-white font-sans">
+    <div id="root"></div>
+  </body>
+</html>
